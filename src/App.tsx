@@ -321,7 +321,7 @@ function App() {
     if (currentEmployee?.position === "administrador") {
       return productsStore.filter((product) => product.active);
     }
-    console.log(productsStore)
+
     return productsStore.filter((product => product.store_id === currentEmployee?.store_id && product.active));
   };
 
